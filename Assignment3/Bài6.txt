@@ -1,0 +1,10 @@
+mã giả của 1 operation có chức năng thêm 1 phần tử vào stack sử dụng linked list:
+- tạo 1 struct Node gồm 1 con trỏ link và 1 biến data kiểu int
+- viết hàm push(int value) {}
+- khởi tạo 1 node temp (Node* temp=new Node())
+- kiểm tra stack có full hay ko if(!temp) ---> heap overflow
+- khởi tạo giá trị trong temp data (temp->data = value;)
+- chỉ con trỏ link đến top (temp->link = top;)
+- và lúc này top của stack là temp (temp = top;)
+
+----> time complextity của operation trên là O(1)

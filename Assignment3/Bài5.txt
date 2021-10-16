@@ -1,0 +1,8 @@
+mã giả của 1 operation có chức năng thêm 1 phần tử vào stack sử dụng array:
+- tạo biến global size kiểu int, và 1 mảng global stack kiểu int (int stack[100])
+- tạo 1 biến top kiểu int và gán bằng -1
+- viết hàm void push(int value) {}
+- nếu top>=size-1 --> stack overflow
+- nếu không thì top++(top=0) --> thêm value vào stack (stack[top]=value);
+
+---> time complexity của operation này là O(1)

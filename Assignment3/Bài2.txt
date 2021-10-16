@@ -1,0 +1,20 @@
+Bài 2:
+CÁCH 1:
++, Viết 1 hàm có kiểu trả về là int (int pow(int n) {})
+- nếu n == 0 --> return 1;
+- nếu n chia hết 2 (n%2 == 0) --> return pow(x,  y/2) * pow(x, y/2);
+- TH còn lại (n không chia hết 2) else --> return x * pow(x, y/2) * (x, y/2);
+
+----> time complexity O(n); 
+
+CÁCH 2:
++, Viết 1 hàm có kiểu trả về là int (int pow(int n) {})
+- tạo 1 biến temp kiểu int;
+- nếu n == 0 --> return 1;
+- gán biến temp = pow(x,  y/2);
+- nếu n chia hết 2 (n%2 == 0) --> return temp * temp;
+- TH còn lại (n không chia hết 2) else --> return x * temp * temp;
+
+----> time complexity O(logn); 
+
+Từ 2 cách trên ta có thể thấy cách 2 tối ưu hơn cách 1.

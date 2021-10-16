@@ -1,0 +1,8 @@
+mã giả của 1 operation có chức năng thêm 1 phần tử vào queue sử dụng mảng:
+- tạo 1 biến global size kiểu int và mảng queue global kiểu int (int queue[size]);
+- tạo 2 biến global front,rear kiểu int gán bằng -1;
+- viết 1 hàm void insert(int value) {}
+- nếu rear = size-1 --> queue overflow;
+- else --> nếu front=-1 --> gán front=0 --> rear++ --> thêm value vào queue (queue[rear]=value;)
+ 
+----> time complextity của operation trên là O(1)

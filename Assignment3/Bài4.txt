@@ -1,0 +1,11 @@
+mã giả của 1 operation có chức năng thêm 1 phần tử vào queue sử dụng linked list:
+- tạo 1 struct Qnode gồm con trỏ next và biến data kiểu int
+- struct Qnode có hàm khởi tạo là Qnode(int d) {data đc gán với d và con trỏ next=NULL};
+- tạo 1 struct Queue gồm 2 con trỏ front, rear
+- viết 1 hàm void insert(int x) trong struct Queue
+- khởi tạo 1 linklikst node bằng biến temp (Qnode* temp = new Qnode(x))
+- nếu rear == NULL thì front = rear = temp; TH này không trả về (return;)
+- nếu ko thì thêm node mới vào cuối queue (rear->next = temp;) 
+- và lúc này gán rear mới bằng temp;
+
+----> time complextity của operation trên là O(1)
